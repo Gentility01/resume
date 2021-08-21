@@ -233,10 +233,10 @@
           <div class="col-lg-8 mt-5 mt-lg-0">
           <form action="" method="POST">
             {% csrf_token %}
-            <input type="text" name="name" class="form-control" placeholder="Your Name"><p><br>
-            <input type="email" name="email" class="form-control" placeholder = "Email"><p><br>
-            <input type="text" name="subject" class="form-control" placeholder = "Subject"><p><br>
-            <textarea name="message" id="" cols="30" rows="10" class="form-control"></textarea><br>
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required><p><br>
+            <input type="email" name="email" class="form-control" placeholder = "Email" required><p><br>
+            <input type="text" name="subject" class="form-control" placeholder = "Subject" required><p><br>
+            <textarea name="message" id="" cols="30" rows="10" class="form-control" required></textarea><br>
             <button type="submit" class="btn btn-primary">Submit</button>
 
 
